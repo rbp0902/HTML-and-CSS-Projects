@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
 		<meta charset="utf-8">
 		<title>Holiday Destinations 2022</title>
 		<link rel="stylesheet" type="text/css" href="Basic_CSS_2.css">
+		<link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css">		
+		<script src="./JS/one_page_website.js" defer></script>
 
 	</head>
 	
 	
 	<body style="background-color: lightblue";>
+
+
+		
 	
 		<!-- NAV -->
 		<div>
@@ -21,13 +29,113 @@
 			</div>
 		</div>
 		<!-- END NAV -->
-		<div style="color: blue">
-				<h1>Enjoy your holidays with your loved ones!!!</h1>
-		</div>
+
+
 		
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/n7Qb5pBdn8E" title="YouTube video player" 
-		frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-		allowfullscreen></iframe>
+
+
+		<!--Creating a Lightbox/Modal Image Gallery here -->
+		<!--Images used to open the lightbox-->
+		
+		<h2 style="text-align:center">Modal Image Gallery/Lightbox, please click any image to view.</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="./images/thumb_2/thumbnail_1b.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/thumb_2/thumbnail_2b.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/thumb_2/thumbnail_3b.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/thumb_2/thumbnail_4b.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+    <img src="./images/thumb_2/thumbnail_5b.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="./images/thumb_2/thumbnail_1b_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="./images/thumb_2/thumbnail_2b_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img src="./images/thumb_2/thumbnail_3b_wide.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="./images/thumb_2/thumbnail_4b_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="./images/thumb_2/thumbnail_5b_wide.jpg" style="width:100%">
+    </div>
+
+
+
+
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="./images/thumb_2/thumbnail_1b_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Bali, Indonesia">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/thumb_2/thumbnail_2b_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="London, UK">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/thumb_2/thumbnail_3b_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Dubai, United Emirates">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/thumb_2/thumbnail_4b_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Rome, Italy">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="./images/thumb_2/thumbnail_5b_wide.jpg" style="width:100%" onclick="currentSlide(5 )" alt="Paris, France">
+    </div>
+
+
+
+  </div>
+</div>
+
+		<!--End of Modal/Lightbox-->
+
+
+	<div style="color: blue">
+			<h1>Enjoy your holidays with your loved ones!!!</h1>
+	</div>
+	
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/n7Qb5pBdn8E" title="YouTube video player" 
+	frameborder="0" allow="accelerometer; autoplay; clipboard-write; emagesncrypted-media; gyroscope; picture-in-picture" 
+	allowfullscreen></iframe>
+
+
+
+
 		
 		<!-- HOME -->
 		<div id="home">
